@@ -87,6 +87,53 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive styles for phones */
+        @media (max-width: 768px) {
+            header {
+                height: 70vh; /* Adjust header height for smaller screens */
+                background-size: cover;
+                background-position: center;
+            }
+
+            header h1 {
+                font-size: 2rem; /* Smaller font size for title */
+            }
+
+            header p {
+                font-size: 1rem; /* Smaller font size for description */
+                line-height: 1.4;
+            }
+
+            header div {
+                padding: 15px; /* Adjust padding for smaller screens */
+                max-width: 90%; /* Increase width for better fit */
+            }
+
+            button, a {
+                font-size: 0.9rem; /* Smaller font size for buttons */
+                padding: 8px 15px; /* Adjust padding for buttons */
+            }
+
+            .policy-section {
+                padding: 20px; /* Reduce padding for smaller screens */
+                margin: 20px auto; /* Adjust margin */
+            }
+
+            .policy-section h2 {
+                font-size: 2rem; /* Smaller font size for headings */
+            }
+
+            .policy-section p {
+                font-size: 1rem; /* Smaller font size for text */
+                line-height: 1.6;
+            }
+
+            footer {
+                font-size: 0.8rem; /* Smaller font size for footer */
+                padding: 15px 0;
+            }
+        }
     </style>
 </head>
 <body>
