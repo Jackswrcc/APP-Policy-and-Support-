@@ -134,6 +134,54 @@
                 padding: 15px 0;
             }
         }
+
+        /* Responsive styles for iPhone screens */
+        @media (max-width: 480px) {
+            header {
+                height: 60vh; /* Reduce header height for smaller screens */
+                background-size: cover;
+                background-position: center;
+            }
+
+            header h1 {
+                font-size: 1.8rem; /* Smaller font size for title */
+                margin-bottom: 10px;
+            }
+
+            header p {
+                font-size: 0.9rem; /* Smaller font size for description */
+                line-height: 1.4;
+            }
+
+            header div {
+                padding: 10px; /* Adjust padding for smaller screens */
+                max-width: 95%; /* Increase width for better fit */
+            }
+
+            button, a {
+                font-size: 0.8rem; /* Smaller font size for buttons */
+                padding: 6px 12px; /* Adjust padding for buttons */
+            }
+
+            .policy-section {
+                padding: 15px; /* Reduce padding for smaller screens */
+                margin: 15px auto; /* Adjust margin */
+            }
+
+            .policy-section h2 {
+                font-size: 1.8rem; /* Smaller font size for headings */
+            }
+
+            .policy-section p {
+                font-size: 0.9rem; /* Smaller font size for text */
+                line-height: 1.5;
+            }
+
+            footer {
+                font-size: 0.7rem; /* Smaller font size for footer */
+                padding: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
