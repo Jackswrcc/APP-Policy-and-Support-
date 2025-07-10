@@ -3,264 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWRCC - Privacy Policy</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>SWRCC – Privacy Policy & Terms of Service</title>
 
+    <!-- ====== Inline Styles ====== -->
+    <style>
+        /* ---- Reset / Base ---- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f9f9f9;
+            background: #f9f9f9;
             color: #333;
             line-height: 1.6;
         }
 
+        /* ---- Header ---- */
         header {
             position: relative;
             width: 100%;
             height: 100vh;
-            background-image: url('https://www.albany.edu/sites/default/files/SWRCC-mobile.jpg');
-            background-size: cover;
-            background-position: center;
+            background: url('https://www.albany.edu/sites/default/files/SWRCC-mobile.jpg') center/cover no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        header h1 {
-            font-size: 3rem; /* Adjusted font size for better fit */
-            font-weight: bold;
-            text-transform: uppercase;
             text-align: center;
-            word-wrap: break-word; /* Ensure text wraps properly */
-            overflow-wrap: break-word; /* Safari compatibility */
-            hyphens: auto; /* Enable hyphenation for long words */
-            max-width: 90%; /* Limit width for better alignment */
-            margin: 0 auto; /* Center the text */
         }
-
-        header p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-
-        header div {
+        header .overlay {
+            background: rgba(55,17,84,.8);
+            color: #fff;
             padding: 20px;
-            max-width: 80%; /* Adjusted width for better fit */
-            margin: 0 auto;
-        }
-
-        .policy-section {
-            max-width: 1200px;
-            margin: 40px auto;
-            background-color: #4B0072;
-            color: white;
-            padding: 40px;
+            max-width: 90%;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
-
-        .policy-section h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 30px;
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-        .policy-section p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .policy-section a {
-            color: #ffcc00;
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #4B0072;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 0.9rem;
-        }
-
-        footer a {
-            color: #ffcc00;
+        header h1 { font-size: 3rem; font-weight: 700; text-transform: uppercase; }
+        header p { font-size: 1.2rem; margin: 10px 0 20px; }
+        header .btn-group { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+        header .btn {
+            padding: 8px 12px;
+            font-size: .8rem;
+            color: #fff;
+            background: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
             text-decoration: none;
         }
 
-        footer a:hover {
-            text-decoration: underline;
+        /* ---- Content Sections ---- */
+        .section {
+            max-width: 1200px;
+            margin: 40px auto;
+            background: #4B0072;
+            color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,.1);
         }
+        .section h2 { font-size: 2.5rem; text-align: center; margin-bottom: 30px; text-transform: uppercase; }
+        .section h3 { font-size: 1.5rem; margin: 20px 0 10px; }
+        .section p, .section li { font-size: 1.2rem; margin-bottom: 20px; line-height: 1.8; }
+        .section ul { margin-left: 20px; }
 
-        /* Responsive styles for phones */
+        /* ---- Footer ---- */
+        footer {
+            background: #4B0072;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: .9rem;
+        }
+        footer a { color: #ffcc00; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        /* ---- Responsive ---- */
         @media (max-width: 768px) {
-            header {
-                height: 70vh; /* Adjust header height for smaller screens */
-                background-size: cover;
-                background-position: center;
-            }
-
-            header h1 {
-                font-size: 2.2rem; /* Adjust font size for smaller screens */
-            }
-
-            header p {
-                font-size: 1rem; /* Smaller font size for description */
-                line-height: 1.4;
-            }
-
-            header div {
-                padding: 15px; /* Adjust padding for smaller screens */
-                max-width: 90%; /* Increase width for better fit */
-            }
-
-            button, a {
-                font-size: 0.9rem; /* Smaller font size for buttons */
-                padding: 8px 15px; /* Adjust padding for buttons */
-            }
-
-            .policy-section {
-                padding: 20px; /* Reduce padding for smaller screens */
-                margin: 20px auto; /* Adjust margin */
-            }
-
-            .policy-section h2 {
-                font-size: 2rem; /* Smaller font size for headings */
-            }
-
-            .policy-section p {
-                font-size: 1rem; /* Smaller font size for text */
-                line-height: 1.6;
-            }
-
-            footer {
-                font-size: 0.8rem; /* Smaller font size for footer */
-                padding: 15px 0;
-            }
+            header { height: 70vh; }
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1rem; }
+            .section { padding: 20px; margin: 20px auto; }
+            .section h2 { font-size: 2rem; }
+            .section p, .section li { font-size: 1rem; }
         }
-
-        /* Responsive styles for iPhone screens */
         @media (max-width: 480px) {
-            header {
-                height: 60vh; /* Reduce header height for smaller screens */
-                background-size: cover;
-                background-position: center;
-            }
-
-            header h1 {
-                font-size: 1.8rem; /* Further reduce font size for iPhone */
-                line-height: 1.2; /* Adjust line height for better spacing */
-                margin-bottom: 10px;
-            }
-
-            header p {
-                font-size: 0.9rem; /* Smaller font size for description */
-                line-height: 1.4;
-            }
-
-            header div {
-                padding: 10px; /* Adjust padding for smaller screens */
-                max-width: 95%; /* Further increase width for iPhone */
-            }
-
-            button, a {
-                font-size: 0.8rem; /* Smaller font size for buttons */
-                padding: 6px 12px; /* Adjust padding for buttons */
-            }
-
-            .policy-section {
-                padding: 15px; /* Reduce padding for smaller screens */
-                margin: 15px auto; /* Adjust margin */
-            }
-
-            .policy-section h2 {
-                font-size: 1.8rem; /* Smaller font size for headings */
-            }
-
-            .policy-section p {
-                font-size: 0.9rem; /* Smaller font size for text */
-                line-height: 1.5;
-            }
-
-            footer {
-                font-size: 0.7rem; /* Smaller font size for footer */
-                padding: 10px 0;
-            }
+            header { height: 60vh; }
+            header h1 { font-size: 1.8rem; line-height: 1.2; }
+            header p { font-size: .9rem; }
+            .section { padding: 15px; margin: 15px auto; }
+            .section h2 { font-size: 1.8rem; }
+            .section p, .section li { font-size: .9rem; }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div style="background-color: rgba(55, 17, 84, .8); color: white; text-align: center; padding: 10px; max-width: 90%; margin: 0 auto; border-radius: 10px;">
-            <h1 style="font-size: 1.8rem; font-weight: bold; text-transform: uppercase; margin-bottom: 10px; line-height: 1.2;">
-                State Weather Risk Communication Center
-            </h1>
-            <p style="font-size: 0.9rem; line-height: 1.4; margin-bottom: 10px;">
-                The first-of-its-kind New York State Weather Risk Communication Center (SWRCC) aims to improve the state’s collective preparation and response to extreme weather events.
-            </p>
-            <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
-                <button onclick="document.getElementById('privacy-policy').scrollIntoView({ behavior: 'smooth' });" 
-                        style="padding: 8px 12px; font-size: 0.8rem; color: white; background-color: #ffcc00; border: none; border-radius: 5px; cursor: pointer;">
-                    View Privacy Policy
-                </button>
-                <a href="https://www.albany.edu/state-weather-risk-communication-center" 
-                   style="padding: 8px 12px; font-size: 0.8rem; color: white; background-color: #ffcc00; text-decoration: none; border-radius: 5px; cursor: pointer;">
-                    Home
-                </a>
-            </div>
+<!-- ====== Header ====== -->
+<header>
+    <div class="overlay">
+        <h1>State Weather Risk Communication Center</h1>
+        <p>The first‑of‑its‑kind New York State Weather Risk Communication Center (SWRCC) aims to improve the state’s collective preparation and response to extreme weather events.</p>
+        <div class="btn-group">
+            <button class="btn" onclick="document.getElementById('privacy-policy').scrollIntoView({behavior:'smooth'})">
+                Privacy Policy
+            </button>
+            <button class="btn" onclick="document.getElementById('terms-of-service').scrollIntoView({behavior:'smooth'})">
+                Terms of Service
+            </button>
+            <a class="btn" href="https://www.albany.edu/state-weather-risk-communication-center">
+                Home
+            </a>
         </div>
-    </header>
-
-    <div id="privacy-policy" class="policy-section">
-        <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 30px; text-align: center; text-transform: uppercase;">Privacy Policy</h2>
-        <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;">
-            <strong>Effective Date:</strong> March 31, 2025
-        </p>
-        <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;">
-            At SWRCC App, we are committed to protecting your privacy. This Privacy Policy outlines the information we collect (or don't collect) and how we handle it.
-        </p>
-
-        <h3 style="font-size: 1.5rem; margin-top: 20px; margin-bottom: 10px;">1. Information We Collect</h3>
-        <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;">
-            We do not collect any personal information from you when you use the SWRCC App. The app does not use third-party services that collect data, and we do not share, sell, or otherwise transfer your data to third parties.
-        </p>
-
-        <h3 style="font-size: 1.5rem; margin-top: 20px; margin-bottom: 10px;">2. Data Security</h3>
-        <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;">
-            Since we do not collect or store personal data, there is no personal information to protect. However, we are committed to maintaining the security and privacy of the information we might process in accordance with best practices.
-        </p>
-
-        <h3 style="font-size: 1.5rem; margin-top: 20px; margin-bottom: 10px;">3. Changes to This Policy</h3>
-        <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;">
-            We may update this Privacy Policy from time to time. If any significant changes are made, we will notify you by updating the "Effective Date" and, where applicable, providing you with additional notices.
-        </p>
-
-        <h3 style="font-size: 1.5rem; margin-top: 20px; margin-bottom: 10px;">4. Contact Us</h3>
-        <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;">
-            If you have any questions about this Privacy Policy or our privacy practices, please contact us at:
-        </p>
-        <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;">
-            Email: <a href="mailto:jackswrcc@gmail.com" style="color: #ffcc00; text-decoration: underline;">jackswrcc@gmail.com</a>
-        </p>
-
-        <h3 style="font-size: 1.5rem; margin-top: 20px; margin-bottom: 10px;">Any Questions About the App?</h3>
-        <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 20px;">
-            If you have any questions about the app, feel free to contact us at: 
-            <a href="mailto:jackswrcc@gmail.com" style="color: #ffcc00; text-decoration: underline;">jackswrcc@gmail.com</a>
-        </p>
     </div>
+</header>
 
-    <footer>
-        <p>&copy; 2025 SWRCC | <a href="mailto:jackswrcc@gmail.com">Contact Us</a></p>
-    </footer>
+<!-- ====== Privacy Policy ====== -->
+<section id="privacy-policy" class="section">
+    <h2>Privacy Policy</h2>
+    <p><strong>Effective Date:</strong> March&nbsp;31,&nbsp;2025</p>
+    <h3>1. Information We Collect</h3>
+    <p>We do not collect any personally identifiable information from you when you use the SWRCC App. The app does not use third‑party services that collect personal data, and we do not share, sell, or otherwise transfer your data to external parties.</p>
+
+    <h3>Push Notifications &amp; Device Tokens</h3>
+    <p>The SWRCC App may use push notifications to alert users about critical weather updates and public safety information. To enable this functionality, the app generates a unique device token for your device. This token is required by Apple Push Notification service (APNs) to deliver notifications directly to your device.</p>
+    <ul>
+        <li>Used <strong>only</strong> for delivering push notifications relevant to SWRCC services.</li>
+        <li>Securely stored and never linked to your personal identity.</li>
+        <li>Never sold, shared, or used for analytics or tracking purposes.</li>
+    </ul>
+
+    <h3>2. Data Security</h3>
+    <p>Since we do not collect or store personal data, there is no personal information to protect. However, we are committed to maintaining the security and privacy of any technical information (such as device tokens) in accordance with best industry practices.</p>
+
+    <h3>3. Changes to This Policy</h3>
+    <p>We may update this Privacy Policy from time to time. If any significant changes are made, we will notify you by updating the “Effective Date” and, where applicable, providing you with additional notices.</p>
+
+    <h3>4. Contact Us</h3>
+    <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us at:<br>
+        Email: <a href="mailto:jackswrcc@gmail.com" style="color:#ffcc00;">jackswrcc@gmail.com</a>
+    </p>
+
+    <h3>Any Questions About the App?</h3>
+    <p>If you have any questions about the app, feel free to contact us at:<br>
+        <a href="mailto:jackswrcc@gmail.com" style="color:#ffcc00;">jackswrcc@gmail.com</a>
+    </p>
+</section>
+
+<!-- ====== Terms of Service ====== -->
+<section id="terms-of-service" class="section">
+    <h2>Terms of Service</h2>
+    <p><strong>Effective Date:</strong> March&nbsp;31,&nbsp;2025</p>
+
+    <h3>1. Acceptance of Terms</h3>
+    <p>By using the SWRCC App, you agree to these Terms of Service. If you do not agree, do not use the app.</p>
+
+    <h3>2. Use of the App</h3>
+    <p>The SWRCC App is intended for informational purposes only. It provides weather alerts, daily briefings, maps, and related data for users in New York State.</p>
+
+    <h3>3. User Conduct</h3>
+    <p>You agree not to misuse the app or access it in a way that could harm, disable, or impair the service or interfere with any other user's experience.</p>
+
+    <h3>4. Disclaimer of Warranties</h3>
+    <p>We are committed to providing accurate, up‑to‑date, and high‑quality information through the SWRCC App. However, all content is provided on an “as is” and “as available” basis. Despite our best efforts, we cannot guarantee that all data will be free of errors, delays, or omissions. Users should not rely solely on the app for critical decisions and are encouraged to consult official government or emergency management sources for authoritative information.</p>
+
+    <h3>5. Limitation of Liability</h3>
+    <p>SWRCC App will not be liable for any damages resulting from the use or inability to use the app, including but not limited to data loss or service interruptions.</p>
+
+    <h3>6. Changes to Terms</h3>
+    <p>We may update these Terms of Service from time to time. Continued use of the app after changes constitutes your acceptance of the new terms.</p>
+
+    <h3>7. Contact Us</h3>
+    <p>If you have any questions about these Terms, please contact us at:<br>
+        Email: <a href="mailto:jackswrcc@gmail.com" style="color:#ffcc00;">jackswrcc@gmail.com</a>
+    </p>
+</section>
+
+<!-- ====== Footer ====== -->
+<footer>
+    <p>&copy; 2025 SWRCC | <a href="mailto:jackswrcc@gmail.com">Contact Us</a></p>
+</footer>
 
 </body>
 </html>
